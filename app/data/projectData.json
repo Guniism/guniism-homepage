@@ -1,0 +1,32 @@
+{
+    "GuniismUnicycle": {
+        "name": "Guniism's unicycle",
+        "desc": "The Stardew Valley mod that adds an electric Unicycle recipe to increase the speed",
+        "web": "https://www.nexusmods.com/stardewvalley/mods/24876",
+        "repo": "https://github.com/Guniism/GuniismUnicycle"
+    },
+    "Forgot": {
+        "name": "Forgot",
+        "desc": "A web app that helps when you forget to switch languages or leave Caps Lock in Thai.",
+        "web": "https://guniism.github.io/Forgot",
+        "repo": "https://github.com/Guniism//Forgot"
+    },
+    "TruthTableGenerator":{
+        "name": "Truth Table Generator",
+        "desc": "A web-based truth table generator using the Shunting Yard algorithm",
+        "web": "https://guniism.github.io/TruthTableGenerator",
+        "repo": "https://github.com/Guniism/TruthTableGenerator"
+    },
+    "ImgToASCIIWebsite": {
+        "name": "Image To ASCII",
+        "desc": "A web app for converting images to ASCII art.",
+        "web": "https://guniism.github.io/ImgToASCIIWebsite",
+        "repo": "https://github.com/Guniism/ImgToASCIIWebsite"
+    },
+    "ColorMixer":{
+        "name": "Color Mixer",
+        "desc": "A web app for mixing multiple RGB colors.",
+        "web": "https://guniism.github.io/ColorMixer",
+        "repo": "https://github.com/Guniism/ColorMixer"
+    }
+}
