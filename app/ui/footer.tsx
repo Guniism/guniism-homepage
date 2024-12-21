@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Footer(){
     return (
         <footer className="p-4 flex flex-row justify-center items-center">
-            <Link href="https://github.com/Guniism/ColorMixer">
+            <Link href="https://github.com/Guniism/guniism-homepage">
                 <Image 
                     src="/github-mark-white.svg" 
                     alt="GitHub" 
