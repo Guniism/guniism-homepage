@@ -1,21 +1,30 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import projectData from "@/app/data/projectData.json";
 import { useState } from "react";
-const projectData = require("@/app/data/projectData.json");
+
+// const projectData = require("@/app/data/projectData.json");
+
+interface Project {
+    name: string;
+    desc: string;
+    web: string;
+    repo: string;
+}
 
 interface ProjectContainerProps {
-    id: string;
-  }
-
-// const ProjectContainer: React.FC<ProjectContainerProps> = ({key, value}) => {
-function ProjectContainer({id}: ProjectContainerProps) {
+    id: keyof typeof projectData;
+}
+  
+  const ProjectContainer: React.FC<ProjectContainerProps> = ({id}) => {
     const [hover, setHover] = useState(false);
 
-    const name =  projectData[id].name;
-    const desc =  projectData[id].desc;
-    const web =  projectData[id].web;
-    const repo =  projectData[id].repo;
+    const { name, desc, web, repo } = projectData[id];
+    // const name =  projectData[id].name;
+    // const desc =  projectData[id].desc;
+    // const web =  projectData[id].web;
+    // const repo =  projectData[id].repo;
 
     const src = `/projectThumbnails/${id}.png`;
     const alt = `${id}_png`;
@@ -58,7 +67,7 @@ export default function Project(){
                 <h2 className=" font-semibold text-4xl ">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-7 my-5">
                     {Object.keys(projectData).map(key => (
-                        <ProjectContainer key={key} id={key}/>
+                        <ProjectContainer key={key} id={key as keyof typeof projectData} />
                     ))}
                 </div>
                 

@@ -11,7 +11,7 @@ export default function Home() {
   const myName = ["Silapin Promajan", "Gun", "Guniism", "Gunisme", "Poogun", "Silapin"];
   const [name, setName] = useState(myName[0]);
   function IMGClickHandler(){
-    let random = Math.floor(Math.random() * myName.length)
+    const random = Math.floor(Math.random() * myName.length)
     const index = (random == myName.length) ? myName.length-1 : random;
     setName(myName[index]);
   }
